@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoWorld - Car Dealership</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #1e1e1e;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #007BFF;
+      color: white;
+    }
+
+    .car-listing {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .car-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      width: 300px;
+      text-align: center;
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .car-card button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .car-card button:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1e1e1e;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AutoWorld</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Cars</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Find Your Dream Car Today</h2>
+    <p>Browse our collection of quality vehicles.</p>
+  </section>
+
+  <section class="car-listing">
+    <div class="car-card">
+      <img src="https://cdn.pixabay.com/photo/2018/03/01/14/59/tesla-3196495_1280.jpg" alt="Car 1" />
+      <h3>2021 Tesla Model 3</h3>
+      <p>$39,990</p>
+      <button onclick="showDetails('Tesla Model 3 - Full Self Driving, 300+ miles range.')">View Details</button>
+    </div>
+    <div class="car-card">
+      <img src="https://cdn.pixabay.com/photo/2020/03/26/15/10/bmw-4973386_1280.jpg" alt="Car 2" />
+      <h3>2022 BMW 5 Series</h3>
+      <p>$55,000</p>
+      <button onclick="showDetails('BMW 5 Series - Luxury sedan with premium interior.')">View Details</button>
+    </div>
+    <div class="car-card">
+      <img src="https://cdn.pixabay.com/photo/2016/12/15/19/54/auto-1905728_1280.jpg" alt="Car 3" />
+      <h3>2020 Ford Mustang</h3>
+      <p>$27,000</p>
+      <button onclick="showDetails('Ford Mustang - Classic American muscle with V8 engine.')">View Details</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AutoWorld. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showDetails(message) {
+      alert(message);
+    }
+  </script>
+</body>
+</html>
